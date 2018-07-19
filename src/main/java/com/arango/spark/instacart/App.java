@@ -56,11 +56,11 @@ public class App {
 		ArangoJavaRDD<Order> rddo = ArangoSpark.load(sc, ORDER_COLLECTION_NAME, Order.class);
 		System.out.println("\n\n\nImported data from ArangoDB successfully\n\n\n");
 		
-		// Train the models
+		// Train the models (only for once)
 		SparkML defs = new SparkML(spark,sc);
-//        defs.trainTfidf(rddpm);
-//        defs.trainALS(rddam);
-//        defs.trainSVD(rddo,true);
+       defs.trainTfidf(rddpm);
+       defs.trainALS(rddam);
+       defs.trainSVD(rddo,true);
 		
 		//Input the trained models for testing
 		Test test = new Test(sc,rddpm,rddam,rddo);
