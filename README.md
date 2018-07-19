@@ -39,9 +39,9 @@ We get the final output as:
 
 	Previously ordered (if any): 
 
-	product_id	department	aisle	product_name
+	product_id - department - aisle - product_name
 
-	31222	beverages	juice nectars	100% Juice, Variety Pack
+	31222 - beverages - juice nectars - 100% Juice, Variety Pack
 	.
 	.
 	.
@@ -49,45 +49,45 @@ We get the final output as:
 
 	Similar orders (sort-by rec_percent): 
 
-	rec_percent	order_id	user_id	order_dow	order_hour_of_day order_number	day_since_prior_order
+	rec_percent - order_id - user_id - order_dow - order_hour_of_day order_number - day_since_prior_order
 
-	92%	710028	109988	4.0	15.0	53.0	7.0
-	84%	3152952	24723	0.0	14.0	52.0	8.0
-	80%	1258911	154366	1.0	21.0	14.0	30.0
+	92% - 710028 - 109988 - 4.0 - 15.0 - 53.0 - 7.0
+	84% - 3152952 - 24723 - 0.0 - 14.0 - 52.0 - 8.0
+	80% - 1258911 - 154366 - 1.0 - 21.0 - 14.0 - 30.0
 	.
 	.
 	.
-	46%	2621617	122044	0.0	19.0	5.0	2.0
-	23%	1998525	171171	2.0	17.0	11.0	30.0
-	19%	965160	24	0.0	16.0	19.0	0.0
+	46% - 2621617 - 122044 - 0.0 - 19.0 - 5.0 - 2.0
+	23% - 1998525 - 171171 - 2.0 - 17.0 - 11.0 - 30.0
+	19% - 965160 - 24 - 0.0 - 16.0 - 19.0 - 0.0
 
 
 	ALS recommended products (sort-by rec_percent):
 
-	rec_percent	product_id	department	aisle	product_name
+	rec_percent - product_id - department - aisle - product_name
 
-	99%	27845	dairy eggs	milk	Organic Whole Milk
-	86%	196	beverages	soft drinks	Soda
-	85%	522	alcohol	spirits	Coffee Liqueur
+	99% - 27845 - dairy eggs - milk - Organic Whole Milk
+	86% - 196 - beverages - soft drinks - Soda
+	85% - 522 - alcohol - spirits - Coffee Liqueur
 	.
 	.
 	.
-	8%	18465	dairy eggs	eggs	Organic Grade A Free Range Large Brown Eggs
-	8%	5876	produce	fresh fruits	Organic Lemon
-	8%	20794	beverages	refrigerated	Kombucha, Organic Raw, Citrus
+	8% - 18465 - dairy eggs - eggs - Organic Grade A Free Range Large Brown Eggs
+	8% - 5876 - produce - fresh fruits - Organic Lemon
+	8% - 20794 - beverages - refrigerated - Kombucha, Organic Raw, Citrus
 
 
 	TFIDF Recommended products (sort-by department_id):
 
-	rec_percent	product_id	department	aisle	product_name
+	rec_percent - product_id - department - aisle - product_name
 
-	64%	13870	snacks	chips pretzels	Lightly Salted Baked Snap Pea Crisps
-	96%	514	household	food storage	Freezer Safe Pint Jars Wide Mouth
-	93%	24838	dairy eggs	soy lactosefree	Unsweetened Almondmilk
+	64% - 13870 - snacks - chips pretzels - Lightly Salted Baked Snap Pea Crisps
+	96% - 514 - household - food storage - Freezer Safe Pint Jars Wide Mouth
+	93% - 24838 - dairy eggs - soy lactosefree - Unsweetened Almondmilk
 	.
 	.
 	.
-	3%	196	beverages	soft drinks	Soda
-	90%	522	alcohol	spirits	Coffee Liqueur
-	87%	24852	produce	fresh fruits	Banana
+	3% - 196 - beverages - soft drinks - Soda
+	90% - 522 - alcohol - spirits - Coffee Liqueur
+	87% - 24852 - produce - fresh fruits - Banana
 
