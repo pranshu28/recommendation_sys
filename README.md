@@ -16,6 +16,14 @@ Code in `/src/main/java/com/arango/spark/instacart/`
 	* `user_id`: target user.
 	* `order_dow`: day of the week (0-6).
 	* `order_hour_of_day`: Hour of the day (0-23).
+7. Maven (only important ones):
+	* `maven-compiler-plugin`: source = 1.8, target = 1.8
+	* `spark-core`: 2.3.1
+	* `spark-mllib`: 2.3.1
+	* `spark-sql`: 2.3.1
+	* `arangodb-java-driver`: 4.6.0
+	* `arangodb-spark-connector`: 1.0.2
+
 
 #### Excecution:
 (Assuming ArangoDB and Spark are already installed and running.) 
